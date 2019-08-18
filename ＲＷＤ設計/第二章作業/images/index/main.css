@@ -1,0 +1,378 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*  css reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* social media start */
+
+.social {
+    background-color: #eee;
+    height: 50px;
+}
+
+.social ul {
+    float: right;
+    margin-right: 20px;
+    line-height: 50px;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social ul li a {
+    font-size: 18px;
+    color: rgb(48, 109, 201);
+}
+
+.social ul li:last-child a {
+    color: rgb(43, 182, 224);
+}
+
+.social:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* social media end */
+
+
+/* menu start */
+
+.menu {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px #999;
+    padding: 15px;
+}
+
+.menu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu .logo {
+    float: left
+}
+
+.menu h1 {
+    float: left;
+    margin-top: 8px;
+}
+
+.menu h1 a {
+    background-image: url(../images/logo.png);
+    width: 170px;
+    height: 36px;
+    display: block;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: rgb(87, 216, 195);
+}
+
+.menu ul li:after {
+    content: '';
+    display: none;
+    border: 0px solid rgb(87, 216, 195);
+}
+
+.menu ul li:hover:after {
+    content: '';
+    display: block;
+    border: 1.5px solid rgb(87, 216, 195);
+    transition: all .5s;
+}
+
+
+/* menu end */
+
+
+/* content start */
+
+.content {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.content h3 {
+    font-weight: 500;
+    padding: 15px;
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 250;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.content .teach {
+    width: 30%;
+    height: 380px;
+    padding: 15px;
+    box-shadow: 0px 2px 2px #999;
+    text-align: center;
+    float: left;
+    margin-right: 50px;
+}
+
+.content .form {
+    width: 30%;
+    height: 380px;
+    padding: 15px;
+    box-shadow: 0px 2px 2px #999;
+    text-align: center;
+    float: left;
+}
+
+.content .contact {
+    width: 30%;
+    height: 380px;
+    padding: 15px;
+    box-shadow: 0px 2px 2px #999;
+    text-align: center;
+    float: right;
+}
+
+.content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media(max-width:767px) {
+    .main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .social ul {
+        margin: 0;
+    }
+    .social ul li a {
+        font-size: 14px;
+        color: rgb(48, 109, 201);
+    }
+    /* menu start */
+    .menu {
+        background-color: #fff;
+        box-shadow: 0px 2px 4px #999;
+        padding: 15px;
+        width: 100%;
+    }
+    .menu h1 {
+        float: none;
+        width: 100%;
+    }
+    .menu h1 a {
+        background-image: url(../images/logo.png);
+        width: 170px;
+        height: 36px;
+        display: block;
+        overflow: hidden;
+        text-indent: 101%;
+        white-space: nowrap;
+        margin: 0 auto;
+    }
+    .menu h1:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .menu ul {
+        float: none;
+        margin-top: 30px;
+        padding: 0px;
+    }
+    .menu ul li {
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+    }
+    .menu ul li a {
+        width: 100%;
+        color: rgb(87, 216, 195);
+    }
+    .menu ul li:after {
+        content: '';
+        display: none;
+    }
+    .menu ul li:hover:after {
+        content: '';
+        display: none;
+    }
+    /* menu end */
+    .content {
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .content .teach,
+    .content .form,
+    .content .contact {
+        width: 100%;
+        float: none;
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Acount</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- header****************************************************************************************************************** -->
+        <div class="head">
+            <div class="formBox">
+                <div class="logo ">
+                    <img src="img/BMICLogo.png" alt="BMI logo">
+                </div>
+                <div class="form">
+                    <div class="bmiForm">
+                        <label type="text" for="tall"> 身高 <span>cm</span></label>
+                        <input type="text" id="tall" class="input_num" name="tall" placeholder=" 請輸入身高">
+                        <div class="errorInfo"></div>
+                    </div>
+                    <div class="bmiForm magin-top">
+                        <label type="text" for="weight"> 體重 <span>kg</span></label>
+                        <input type="text" id="weight" class="input_num" name="weight" placeholder=" 請輸入體重">
+                        <div class="errorInfo"></div>
+                    </div>
+
+                </div>
+                <button class="finalBtn">看結果</button>
+                <div class="BMIFinal">
+                    <span class="BMINum"></span>
+                    <span class="BMIMemo">BMI</span>
+                    <div class="BMILoop">
+                        <img src="img/icons_loop.png" alt="loop">
+                    </div>
+                </div>
+                <span class="BMIText"></span>
+            </div>
+        </div>
+
+
+
+        <!-- container******************************************************************************************************* -->
+        <div class="container">
+            <h1>BMI 紀錄</h1>
+            <ul class="weightForm">
+                <!--  理 想**********************************************-->
+                <li class="formStyle BMI-green">
+                    <div class="BMIstate">
+                        <h4>理 想</h4>
+                    </div>
+                    <div class="BMI">
+                        <h5><span>BMI</span> 20.90</h5>
+                    </div>
+                    <div class="personWeight">
+                        <h5><span>weight</span> 70kg</h5>
+                    </div>
+                    <div class="personHeight">
+                        <h5><span>height</span> 180cm</h5>
+                    </div>
+                    <div class="date">
+                        <span>06-19-2017</span>
+                    </div>
+                    <a>x</a>
+                </li>
+                <!--  過 輕**********************************************-->
+                <li class="formStyle BMI-blue">
+                    <div class="BMIstate">
+                        <h4>過 輕</h4>
+                    </div>
+                    <div class="BMI">
+                        <h5>
+                            <span>BMI</span> 20.90</h5>
+                    </div>
+                    <div class="personWeight">
+                        <h5>
+                            <span>weight</span> 70kg</h5>
+                    </div>
+                    <div class="personHeight">
+                        <h5>
+                            <span>height</span> 180cm</h5>
+                    </div>
+                    <div class="date">
+                        <span>06-19-2017</span>
+                    </div>
+                    <div class="delete">
+                        <a>x</a>
+                    </div>
+                </li>
+                <!--  過 重**********************************************-->
+                <li class="formStyle BMI-orange">
+                    <div class="BMIstate">
+                        <h4>過 重</h4>
+                    </div>
+                    <div class="BMI">
+                        <h5>
+                            <span>BMI</span> 20.90</h5>
+                    </div>
+                    <div class="personWeight">
+                        <h5>
+                            <span>weight</span> 70kg</h5>
+                    </div>
+                    <div class="personHeight">
+                        <h5>
+                            <span>height</span> 180cm</h5>
+                    </div>
+                    <div class="date">
+                        <span>06-19-2017</span>
+                    </div>
+                    <div class="delete">
+                        <a>x</a>
+                    </div>
+                </li>
+                <!--  輕度肥胖**********************************************-->
+                <li class="formStyle BMI-mediumOrange">
+                    <div class="BMIstate">
+                        <h4>輕度肥胖</h4>
+                    </div>
+                    <div class="BMI">
+                        <h5>
+                            <span>BMI</span> 20.90</h5>
+                    </div>
+                    <div class="personWeight">
+                        <h5>
+                            <span>weight</span> 70kg</h5>
+                    </div>
+                    <div class="personHeight">
+                        <h5>
+                            <span>height</span> 180cm</h5>
+                    </div>
+                    <div class="date">
+                        <span>06-19-2017</span>
+                    </div>
+                    <div class="delete">
+                        <a>x</a>
+                    </div>
+                </li>
+                <!--  中度肥胖**********************************************-->
+                <li class="formStyle BMI-heavyOrange">
+                    <div class="BMIstate">
+                        <h4>中度肥胖</h4>
+                    </div>
+                    <div class="BMI">
+                        <h5>
+                            <span>BMI</span> 20.90</h5>
+                    </div>
+                    <div class="personWeight">
+                        <h5>
+                            <span>weight</span> 70kg</h5>
+                    </div>
+                    <div class="personHeight">
+                        <h5>
+                            <span>height</span> 180cm</h5>
+                    </div>
+                    <div class="date">
+                        <span>06-19-2017</span>
+                    </div>
+                    <div class="delete">
+                        <a>x</a>
+                    </div>
+                </li>
+                <!--  重度肥胖**********************************************-->
+                <li class="formStyle BMI-red">
+                    <div class="BMIstate">
+                        <h4>重度肥胖</h4>
+                    </div>
+                    <div class="BMI">
+                        <h5>
+                            <span>BMI</span> 20.90</h5>
+                    </div>
+                    <div class="personWeight">
+                        <h5>
+                            <span>weight</span> 70kg</h5>
+                    </div>
+                    <div class="personHeight">
+                        <h5>
+                            <span>height</span> 180cm</h5>
+                    </div>
+                    <div class="date">
+                        <span>06-19-2017</span>
+                    </div>
+                    <div class="delete">
+                        <a>x</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- foot****************************************************************************************************************** -->
+        <div class="foot">
+            <img src="img/BMICLogo-gray.png" alt="logo">
+        </div>
+
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
